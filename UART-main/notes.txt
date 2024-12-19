@@ -1,0 +1,6 @@
+. $HOME/esp/esp-idf/export.sh
+
+LoRa Device:
+
+1. Upload at 115200
+2. Boot it if there are issues
