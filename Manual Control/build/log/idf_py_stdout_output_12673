@@ -1,0 +1,431 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6300
+ho 0 tail 12 room 4
+load:0x40078000,len:15788
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (33) boot: ESP-IDF v5.4-dev-4375-gf420609c33 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Dec 20 2024 01:57:32[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (46) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (63) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (70) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (83) boot: End of partition table[0m
+[0;32mI (86) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b0e4h ( 45284) map[0m
+[0;32mI (109) esp_image: segment 1: paddr=0001b10c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001b130 vaddr=3ffb0000 size=023e4h (  9188) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=0001d51c vaddr=40080000 size=02afch ( 11004) load[0m
+[0;32mI (125) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=15cc0h ( 89280) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00035ce8 vaddr=40082afc size=0b1e0h ( 45536) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu start user code[0m
+[0;32mI (202) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (202) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     uart_echo[0m
+[0;32mI (210) app_init: App version:      45e1542-dirty[0m
+[0;32mI (215) app_init: Compile time:     Dec 20 2024 01:57:14[0m
+[0;32mI (221) app_init: ELF file SHA256:  a2f70d641...[0m
+[0;32mI (226) app_init: ESP-IDF:          v5.4-dev-4375-gf420609c33[0m
+[0;32mI (233) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (238) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (243) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (248) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (255) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 3FFB2CA8 len 0002D358 (180 KiB): DRAM[0m
+[0;32mI (267) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (273) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 4008DCDC len 00012324 (72 KiB): IRAM[0m
+[0;32mI (288) spi_flash: detected chip: generic[0m
+[0;32mI (290) spi_flash: flash io: dio[0m
+[0;33mW (294) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (308) main_[0;32mI (318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (318) main_task: Returned from app_main()[0m
+[0;32mI (818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (1318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (1818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (2318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (2818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (3318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (3818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (4318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (4818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (5318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (5818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (6318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (6818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (7318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (7818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (8318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (8818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (9318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (9818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (10318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (10818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (11318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (11818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (12318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (12818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (13318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (13818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (13818) DIRECTION: Moving the Bot forward[0m
+[0;32mI (14318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (14318) DIRECTION: Moving the Bot forward[0m
+[0;32mI (14818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (14818) DIRECTION: Moving the Bot forward[0m
+[0;32mI (15318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (15318) DIRECTION: Moving the Bot forward[0m
+[0;32mI (15818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (15818) DIRECTION: Moving the Bot forward[0m
+[0;32mI (16318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (16318) DIRECTION: Moving the Bot forward[0m
+[0;32mI (16818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (16818) DIRECTION: Moving the Bot forward[0m
+[0;32mI (17318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (17318) DIRECTION: Moving the Bot forward[0m
+[0;32mI (17818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (17818) DIRECTION: Moving the Bot forward[0m
+[0;32mI (18318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (18318) DIRECTION: Moving the Bot forward[0m
+[0;32mI (18818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (18818) DIRECTION: Moving the Bot forward[0m
+[0;32mI (19318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (19318) DIRECTION: Moving the Bot forward[0m
+[0;32mI (19818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (19818) DIRECTION: Moving the Bot forward[0m
+[0;32mI (20318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (20318) DIRECTION: Reversing the Bot[0m
+[0;32mI (20818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (20818) DIRECTION: Reversing the Bot[0m
+[0;32mI (21318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (21318) DIRECTION: Reversing the Bot[0m
+[0;32mI (21818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (21818) DIRECTION: Reversing the Bot[0m
+[0;32mI (22318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (22318) DIRECTION: Reversing the Bot[0m
+[0;32mI (22818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (22818) DIRECTION: Moving the Bot right[0m
+[0;32mI (23318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (23318) DIRECTION: Moving the Bot right[0m
+[0;32mI (23818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (23818) DIRECTION: Moving the Bot left[0m
+[0;32mI (24318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (24318) DIRECTION: Moving the Bot left[0m
+[0;32mI (24818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (24818) DIRECTION: Moving the Bot forward[0m
+[0;32mI (25318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (25318) DIRECTION: Reversing the Bot[0m
+[0;32mI (25818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (25818) DIRECTION: Moving the Bot right[0m
+[0;32mI (26318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (26318) DIRECTION: Moving the Bot left[0m
+[0;32mI (26818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (26818) DIRECTION: Moving the Bot left[0m
+[0;32mI (27318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (27318) DIRECTION: Moving the Bot left[0m
+[0;32mI (27818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (27818) DIRECTION: Moving the Bot left[0m
+[0;32mI (28318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (28318) DIRECTION: Moving the Bot left[0m
+[0;32mI (28818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (28818) DIRECTION: Moving the Bot left[0m
+[0;32mI (29318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (29318) DIRECTION: Moving the Bot left[0m
+[0;32mI (29818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (29818) DIRECTION: Moving the Bot left[0m
+[0;32mI (30318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (30318) DIRECTION: Moving the Bot left[0m
+[0;32mI (30818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (30818) DIRECTION: Moving the Bot left[0m
+[0;32mI (31318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (31318) DIRECTION: Moving the Bot left[0m
+[0;32mI (31818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (31818) DIRECTION: Moving the Bot left[0m
+[0;32mI (32318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (32318) DIRECTION: Moving the Bot left[0m
+[0;32mI (32818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (32818) DIRECTION: Moving the Bot left[0m
+[0;32mI (33318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (33318) DIRECTION: Moving the Bot left[0m
+[0;32mI (33818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (33818) DIRECTION: Moving the Bot left[0m
+[0;32mI (34318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (34318) DIRECTION: Moving the Bot left[0m
+[0;32mI (34818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (34818) DIRECTION: Moving the Bot left[0m
+[0;32mI (35318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (35318) DIRECTION: Moving the Bot left[0m
+[0;32mI (35818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (35818) DIRECTION: Moving the Bot left[0m
+[0;32mI (36318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (36318) DIRECTION: Moving the Bot left[0m
+[0;32mI (36818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (36818) DIRECTION: Moving the Bot left[0m
+[0;32mI (37318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (37318) DIRECTION: Moving the Bot left[0m
+[0;32mI (37818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (37818) DIRECTION: Moving the Bot left[0m
+[0;32mI (38318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (38318) DIRECTION: Moving the Bot left[0m
+[0;32mI (38818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (38818) DIRECTION: Moving the Bot left[0m
+[0;32mI (39318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (39318) DIRECTION: Moving the Bot left[0m
+[0;32mI (39818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (39818) DIRECTION: Moving the Bot left[0m
+[0;32mI (40318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (40318) DIRECTION: Moving the Bot left[0m
+[0;32mI (40818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (40818) DIRECTION: Moving the Bot left[0m
+[0;32mI (41318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (41318) DIRECTION: Moving the Bot left[0m
+[0;32mI (41818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (41818) DIRECTION: Moving the Bot left[0m
+[0;32mI (42318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (42318) DIRECTION: Moving the Bot left[0m
+[0;32mI (42818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (42818) DIRECTION: Moving the Bot left[0m
+[0;32mI (43318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (43318) DIRECTION: Moving the Bot left[0m
+[0;32mI (43818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (43818) DIRECTION: Moving the Bot left[0m
+[0;32mI (44318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (44318) DIRECTION: Moving the Bot left[0m
+[0;32mI (44818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (44818) DIRECTION: Moving the Bot left[0m
+[0;32mI (45318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (45318) DIRECTION: Moving the Bot left[0m
+[0;32mI (45818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (45818) DIRECTION: Moving the Bot left[0m
+[0;32mI (46318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (46318) DIRECTION: Moving the Bot left[0m
+[0;32mI (46818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (46818) DIRECTION: Moving the Bot left[0m
+[0;32mI (47318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (47318) DIRECTION: Moving the Bot left[0m
+[0;32mI (47818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (47818) DIRECTION: Moving the Bot left[0m
+[0;32mI (48318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (48318) DIRECTION: Moving the Bot left[0m
+[0;32mI (48818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (48818) DIRECTION: Moving the Bot left[0m
+[0;32mI (49318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (49318) DIRECTION: Moving the Bot left[0m
+[0;32mI (49818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (49818) DIRECTION: Moving the Bot left[0m
+[0;32mI (50318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (50318) DIRECTION: Moving the Bot left[0m
+[0;32mI (50818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (50818) DIRECTION: Moving the Bot left[0m
+[0;32mI (51318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (51318) DIRECTION: Moving the Bot left[0m
+[0;32mI (51818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (51818) DIRECTION: Moving the Bot left[0m
+[0;32mI (52318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (52318) DIRECTION: Moving the Bot left[0m
+[0;32mI (52818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (52818) DIRECTION: Moving the Bot left[0m
+[0;32mI (53318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (53318) DIRECTION: Moving the Bot left[0m
+[0;32mI (53818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (53818) DIRECTION: Moving the Bot left[0m
+[0;32mI (54318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (54318) DIRECTION: Moving the Bot left[0m
+[0;32mI (54818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (54818) DIRECTION: Moving the Bot left[0m
+[0;32mI (55318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (55318) DIRECTION: Moving the Bot left[0m
+[0;32mI (55818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (55818) DIRECTION: Moving the Bot left[0m
+[0;32mI (56318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (56318) DIRECTION: Moving the Bot left[0m
+[0;32mI (56818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (56818) DIRECTION: Moving the Bot left[0m
+[0;32mI (57318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (57318) DIRECTION: Moving the Bot left[0m
+[0;32mI (57818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (57818) DIRECTION: Moving the Bot left[0m
+[0;32mI (58318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (58318) DIRECTION: Moving the Bot left[0m
+[0;32mI (58818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (58818) DIRECTION: Moving the Bot left[0m
+[0;32mI (59318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (59318) DIRECTION: Moving the Bot left[0m
+[0;32mI (59818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (59818) DIRECTION: Moving the Bot left[0m
+[0;32mI (60318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (60318) DIRECTION: Moving the Bot left[0m
+[0;32mI (60818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (60818) DIRECTION: Moving the Bot left[0m
+[0;32mI (61318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (61318) DIRECTION: Moving the Bot left[0m
+[0;32mI (61818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (61818) DIRECTION: Moving the Bot left[0m
+[0;32mI (62318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (62318) DIRECTION: Moving the Bot left[0m
+[0;32mI (62818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (62818) DIRECTION: Moving the Bot left[0m
+[0;32mI (63318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (63318) DIRECTION: Moving the Bot left[0m
+[0;32mI (63818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (63818) DIRECTION: Moving the Bot left[0m
+[0;32mI (64318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (64318) DIRECTION: Moving the Bot left[0m
+[0;32mI (64818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (64818) DIRECTION: Moving the Bot left[0m
+[0;32mI (65318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (65318) DIRECTION: Moving the Bot left[0m
+[0;32mI (65818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (65818) DIRECTION: Moving the Bot left[0m
+[0;32mI (66318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (66318) DIRECTION: Moving the Bot left[0m
+[0;32mI (66818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (66818) DIRECTION: Moving the Bot left[0m
+[0;32mI (67318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (67318) DIRECTION: Moving the Bot left[0m
+[0;32mI (67818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (67818) DIRECTION: Moving the Bot left[0m
+[0;32mI (68318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (68318) DIRECTION: Moving the Bot left[0m
+[0;32mI (68818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (68818) DIRECTION: Moving the Bot left[0m
+[0;32mI (69318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (69318) DIRECTION: Moving the Bot left[0m
+[0;32mI (69818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (69818) DIRECTION: Moving the Bot left[0m
+[0;32mI (70318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (70318) DIRECTION: Moving the Bot left[0m
+[0;32mI (70818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (70818) DIRECTION: Moving the Bot left[0m
+[0;32mI (71318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (71318) DIRECTION: Moving the Bot left[0m
+[0;32mI (71818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (71818) DIRECTION: Moving the Bot left[0m
+[0;32mI (72318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (72318) DIRECTION: Moving the Bot left[0m
+[0;32mI (72818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (72818) DIRECTION: Moving the Bot left[0m
+[0;32mI (73318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (73318) DIRECTION: Moving the Bot left[0m
+[0;32mI (73818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (73818) DIRECTION: Moving the Bot left[0m
+[0;32mI (74318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (74318) DIRECTION: Moving the Bot left[0m
+[0;32mI (74818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (74818) DIRECTION: Moving the Bot left[0m
+[0;32mI (75318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (75318) DIRECTION: Moving the Bot left[0m
+[0;32mI (75818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (75818) DIRECTION: Moving the Bot left[0m
+[0;32mI (76318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (76318) DIRECTION: Moving the Bot left[0m
+[0;32mI (76818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (76818) DIRECTION: Moving the Bot left[0m
+[0;32mI (77318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (77318) DIRECTION: Moving the Bot left[0m
+[0;32mI (77818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (77818) DIRECTION: Moving the Bot left[0m
+[0;32mI (78318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (78318) DIRECTION: Moving the Bot left[0m
+[0;32mI (78818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (78818) DIRECTION: Moving the Bot left[0m
+[0;32mI (79318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (79318) DIRECTION: Moving the Bot left[0m
+[0;32mI (79818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (79818) DIRECTION: Moving the Bot left[0m
+[0;32mI (80318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (80318) DIRECTION: Moving the Bot left[0m
+[0;32mI (80818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (80818) DIRECTION: Moving the Bot left[0m
+[0;32mI (81318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (81318) DIRECTION: Moving the Bot left[0m
+[0;32mI (81818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (81818) DIRECTION: Moving the Bot left[0m
+[0;32mI (82318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (82318) DIRECTION: Moving the Bot left[0m
+[0;32mI (82818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (82818) DIRECTION: Moving the Bot left[0m
+[0;32mI (83318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (83318) DIRECTION: Moving the Bot left[0m
+[0;32mI (83818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (83818) DIRECTION: Moving the Bot left[0m
+[0;32mI (84318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (84318) DIRECTION: Moving the Bot left[0m
+[0;32mI (84818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (84818) DIRECTION: Moving the Bot left[0m
+[0;32mI (85318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (85318) DIRECTION: Moving the Bot left[0m
+[0;32mI (85818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (85818) DIRECTION: Moving the Bot left[0m
+[0;32mI (86318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (86318) DIRECTION: Moving the Bot left[0m
+[0;32mI (86818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (86818) DIRECTION: Moving the Bot left[0m
+[0;32mI (87318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (87318) DIRECTION: Moving the Bot left[0m
+[0;32mI (87818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (87818) DIRECTION: Moving the Bot left[0m
+[0;32mI (88318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (88318) DIRECTION: Moving the Bot left[0m
+[0;32mI (88818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (88818) DIRECTION: Moving the Bot left[0m
+[0;32mI (89318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (89318) DIRECTION: Moving the Bot left[0m
+[0;32mI (89818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (89818) DIRECTION: Moving the Bot left[0m
+[0;32mI (90318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (90318) DIRECTION: Moving the Bot left[0m
+[0;32mI (90818) STATE: The Bot is in Manual Mode[0m
+[0;32mI (90818) DIRECTION: Moving the Bot left[0m
+[0;32mI (91318) STATE: The Bot is in Manual Mode[0m
+[0;32mI (91318) DIRECTION: Moving the Bot left[0m
+[0;32mI (91818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (92318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (92818) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command
+[0;32mI (93318) STATE: The Bot is in Manual Mode[0m
+ERROR, Invalid Command

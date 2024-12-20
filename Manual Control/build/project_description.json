@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "uart_echo",
-    "project_version":    "d012f86",
+    "project_version":    "45e1542-dirty",
     "project_path":       "/Users/noahrobitshek/SeniorDesign/Examples/Manual Control",
     "idf_path":           "/Users/noahrobitshek/esp/esp-idf",
     "build_dir":          "/Users/noahrobitshek/SeniorDesign/Examples/Manual Control/build",
@@ -1195,7 +1195,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/noahrobitshek/SeniorDesign/Examples/Manual Control/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/noahrobitshek/SeniorDesign/Examples/Manual Control/main/uart_echo_example_main.c" ],
+            "sources": [ "/Users/noahrobitshek/SeniorDesign/Examples/Manual Control/main/uart_echo_example_main.c", "/Users/noahrobitshek/SeniorDesign/Examples/Manual Control/main/handlers.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
