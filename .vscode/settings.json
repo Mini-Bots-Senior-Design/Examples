@@ -5,5 +5,6 @@
         "string_view": "c",
         "vector": "c"
     },
-    "cmake.sourceDirectory": "/Users/noahrobitshek/SeniorDesign/Examples/Manual Control"
+    "cmake.sourceDirectory": "/Users/noahrobitshek/SeniorDesign/Examples/Manual Control",
+    "idf.port": "/dev/cu.usbserial-0001"
 }
