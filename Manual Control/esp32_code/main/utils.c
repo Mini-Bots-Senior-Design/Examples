@@ -1,6 +1,12 @@
 
 #include "utils.h"
 
+int forwardSpeed = 1700;
+int reverseSpeed = 1300;
+
+int turningMotorSpeed = 1600;
+int stoppedSpeed = 1500;
+
 
 void uart_init(){
     uart_config_t uart_config = {
@@ -18,30 +24,6 @@ void uart_init(){
     ESP_ERROR_CHECK(uart_set_pin(INPUT_UART_PORT_NUM, INPUT_TXD, INPUT_RXD, ECHO_TEST_RTS, ECHO_TEST_CTS));
 }
 
-// Task
-void read_uart_task(void *arg)
-{
-    uart_init(); 
-
-    // Configure a temporary buffer for the incoming data
-    uint8_t *data = (uint8_t *) malloc(BUF_SIZE);
-
-    while (1) {
-
-        // Read Data from LoRa Device
-        int len = uart_read_bytes(INPUT_UART_PORT_NUM, data, (BUF_SIZE - 1), 20 / portTICK_PERIOD_MS);
-
-        // print user input
-        if (len) {
-            data[len] = '\0';
-            
-            parse_input_string((char *) data);
-            // botDirection = (char *) data;
-        }
-
-        vTaskDelay(pdMS_TO_TICKS(100));     
-    }
-}
 
 
 // Function to parse the input string
@@ -71,8 +53,10 @@ void parse_input_string(char *input) {
         state = STATE_MOV;
 
         // set global variables
-        botDirection = strtok(NULL, " ");  // Continue tokenizing
+        char *botDirection = strtok(NULL, " ");  // Continue tokenizing
         printf("Bot Direction: %s\n", botDirection);
+
+        handle_MOV(botDirection);
     } 
 
     else if (strcmp(input, "MOVGPS") == 0) {
@@ -90,10 +74,57 @@ void parse_input_string(char *input) {
         state = STATE_MOVPWM;
 
         // set the left and right PWM
+        leftPWM = atoi(strtok(NULL, " "));  // Continue tokenizing
+        rightPWM = atoi(strtok(NULL, " "));  // Continue tokenizing
+
+        printf("Parsing MOVPWM String");
+        printf("rightPWM: %d\n", rightPWM);
+        printf("leftPWM: %d\n", leftPWM);
         // TODO
     } 
 
     else {
         printf("Unknown command received: %s\n", input);
     } 
+}
+
+// Handle Functions
+void handle_MOV(char *botDirection){
+    printf("handling mov");
+    
+    switch (*botDirection) {
+        case 'R':
+            ESP_LOGI(TAG_DIRECTION, "%s", "Moving the Bot right");
+            leftPWM = forwardSpeed;
+            rightPWM = turningMotorSpeed;
+
+            break;
+        case 'L':
+            ESP_LOGI(TAG_DIRECTION, "%s", "Moving the Bot left");
+            leftPWM = turningMotorSpeed;
+            rightPWM = forwardSpeed;
+
+            break;
+        case 'F':
+            ESP_LOGI(TAG_DIRECTION, "%s", "Moving the Bot forward");
+            leftPWM = forwardSpeed;
+            rightPWM = forwardSpeed;
+
+            break;
+        case 'S':
+            ESP_LOGI(TAG_DIRECTION, "%s", "Stopping the Bot");
+            leftPWM = stoppedSpeed;
+            rightPWM = stoppedSpeed;
+
+            break;
+        case 'B':
+            ESP_LOGI(TAG_DIRECTION, "%s", "Reversing the Bot");
+            leftPWM = reverseSpeed;
+            rightPWM = reverseSpeed;
+
+            break;
+        default:
+            printf("ERROR, Invalid Command\n");
+            break;
+    }
 }

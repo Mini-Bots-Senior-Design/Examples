@@ -27,10 +27,9 @@
 // Function prototypes
 void uart_init(void);  // UART initialization function
 
-// Task to read from UART
-void read_uart_task(void *arg);
-
 // Function to parse the input string
 void parse_input_string(char *input);
+
+void handle_MOV(char *botDirection);
 
 #endif  // UART_COMM_H

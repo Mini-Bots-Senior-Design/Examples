@@ -5,7 +5,6 @@
 
 
 // Handle Functions
-void handle_MOV();
 void handle_MOV_GPS();
 void handle_MOV_PWM();
 

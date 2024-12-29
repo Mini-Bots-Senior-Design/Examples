@@ -15,10 +15,11 @@ extern const char *TAG_DIRECTION;
 extern BotState state;
 
 // Global Variables
-extern char *botDirection;
-
 extern int leftPWM;
 extern int rightPWM;
+
+extern int *leftptr;
+extern int *rightptr;
 
 extern int latEX;
 extern int longEX;

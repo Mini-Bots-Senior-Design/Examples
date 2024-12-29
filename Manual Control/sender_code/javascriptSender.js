@@ -65,7 +65,6 @@ const baudRate = 115200;
 process.stdin.setRawMode(true);
 
 
-
 var leftPWM = 1500;
 var rightPWM = 1500;
 
@@ -254,6 +253,13 @@ port.on('data', (chunk) => {
         lines.slice(0, -1).forEach((line) => {
             console.log(`Received: ${line.trim()}`);
         });
+
+        // parse position data
+        // format: "POS <buoyID> <LatCurr> <LonCurr> <Heading>"
+        // format: "DEMODATA <buoyID> <LatCurr> <LonCurr> <Heading> <AccelX> <AccelY> <AccelZ>"
+        if(line.trim().startsWith("POS")){
+
+        }
 
         // Keep the last incomplete line in the buffer
         buffer = lines[lines.length - 1];

@@ -4,13 +4,12 @@
 const char *TAG_STATE = "STATE";
 const char *TAG_DIRECTION = "DIRECTION";
 
-BotState state;
+BotState state = STATE_STARTUP;
 
 // Global Variables
-char *botDirection = "S";
-
-int leftPWM;
-int rightPWM;
+// Default Robot Speeds
+int leftPWM = 1500;
+int rightPWM = 1500;
 
 int latEX;
 int longEX;
