@@ -58,7 +58,7 @@ void setup() {
     Serial.print("GPS not detected at default I2C address. Attempt ");
     Serial.print(gps_attempt);
     Serial.println(" of 10. Retrying...");
-    delay(100);
+    delay(5000);
   }
 
   gps.setI2COutput(COM_TYPE_UBX);
