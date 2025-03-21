@@ -20,22 +20,24 @@ void setup() {
   // Define an API route (GET /status)
   server.on("/status", HTTP_GET, [](AsyncWebServerRequest *request) {
 
+    Serial.println("Status Message Recieved");
+
       // Print Query Parameters
-    if (request->params()) {
-        Serial.println("Query Parameters:");
-        for (int i = 0; i < request->params(); i++) {
-            const AsyncWebParameter* param = request->getParam(i);
-            Serial.printf("  %s: %s\n", param->name().c_str(), param->value().c_str());
-        }
-    }
+    // if (request->params()) {
+    //     Serial.println("Query Parameters:");
+    //     for (int i = 0; i < request->params(); i++) {
+    //         const AsyncWebParameter* param = request->getParam(i);
+    //         Serial.printf("  %s: %s\n", param->name().c_str(), param->value().c_str());
+    //     }
+    // }
 
     // Print Headers
-    Serial.println("Headers:");
-    int headers = request->headers();
-    for (int i = 0; i < headers; i++) {
-        const AsyncWebHeader* h = request->getHeader(i);
-        Serial.printf("  %s: %s\n", h->name().c_str(), h->value().c_str());
-    }
+    // Serial.println("Headers:");
+    // int headers = request->headers();
+    // for (int i = 0; i < headers; i++) {
+    //     const AsyncWebHeader* h = request->getHeader(i);
+    //     Serial.printf("  %s: %s\n", h->name().c_str(), h->value().c_str());
+    // }
 
 
     request->send(200, "application/json", "{\"status\": \"ESP32 running\"}");
