@@ -167,7 +167,7 @@ void setup() {
   Wire.begin(21,22);
 
   for (unsigned int imu_attempt = 0; imu_attempt < 10; imu_attempt++) {
-    if (imu.begin(BNO08X_ADDR, Wire, BNO08X_INT, BNO08X_RST)) {
+    if (imu.begin()) {
       break;
     }
     Serial.print("BNO08x not detected at default I2C address. Attempt ");
