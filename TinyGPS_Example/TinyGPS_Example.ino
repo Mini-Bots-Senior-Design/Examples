@@ -1,5 +1,7 @@
 #include <TinyGPS++.h>
 #include <HardwareSerial.h>
+#include <math.h>  // Required for lround()
+
 
 // Define GPS Serial Port (ESP32 has multiple hardware serials)
 HardwareSerial SerialGPS(1);  // Use Serial1
@@ -29,34 +31,27 @@ void loop()
     while (SerialGPS.available() > 0){
       if (gps.encode(SerialGPS.read())){
         displayInfo2();
-        // displayInfo();
         delay(1000);
       }
-    }
-
-
-    if (millis() > 15000 && gps.charsProcessed() < 10) {
-        Serial.println(F("No GPS detected: check wiring."));
-        delay(15000);
     }
 }
 
 
-// Sample GPS in MiniBots Fashion
-void displayInfo2(){
+void displayInfo2() {
   long lat_scaled = 0;
   long lng_scaled = 0;
 
   Serial.print(F("Location: "));
   if (gps.location.isValid()) {
-      lat_scaled = gps.location.lat() * 1000;  // Convert to long
-      lng_scaled = gps.location.lng() * 1000;  // Convert to long
+      // Scale latitude and longitude by 1,000,000 for micro-degree accuracy
+      lat_scaled = lround(gps.location.lat() * 1e6);
+      lng_scaled = lround(gps.location.lng() * 1e6);
 
       Serial.print(lat_scaled);
       Serial.print(F(", "));
       Serial.println(lng_scaled);
   } else {
-      Serial.print(F("INVALID"));
+      Serial.println(F("INVALID"));
   }
 }
 
